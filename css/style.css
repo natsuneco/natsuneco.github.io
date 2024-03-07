@@ -1,0 +1,28 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    padding: 0 30px;
+    max-width: fit-content;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    border-bottom: solid 2px black;
+}
+
+footer {
+    text-align: center;
+}
